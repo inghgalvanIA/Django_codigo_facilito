@@ -1,4 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def Index(request):
-    return HttpResponse('Hola desde el archivo views.py')
+    return render(request, 'index.html',{
+        #contexto
+
+
+    }
+    )
