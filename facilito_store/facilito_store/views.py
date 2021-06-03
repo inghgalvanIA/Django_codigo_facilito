@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+#todas las funciones asociadas a una ruta llevara el request
+
 def Index(request):
     return render(request, 'index.html',{
         #contexto
@@ -12,4 +14,9 @@ def Index(request):
         {"title":"Mochila","price":20,"stock":False},
     ]
 
+    })
+
+def login(request):
+    return render(request, 'users/login.html',{
+        
     })
